@@ -41,7 +41,7 @@
 21 silly publish   license: 'MIT',
 21 silly publish   readme: '# vue-click-ripple\r\nvue点击波纹特效插件\r\n\r\n\r\n## 安装\r\n\r\n#### npm下载\r\n`````\r\n● yarn add vue-click-ripple\r\n`````\r\n### vue-cli内main文件\r\n\r\n``````\r\n● import Vue from \'vue\'\r\n\r\n● import clickRipple from "vue-click-ripple"\r\n\r\n● Vue.use(clickRipple)\r\n````````````````\r\n\r\n## 使用\r\n\r\n* this.$clickRipple(ele)  ||  Vue.$clickRipple(ele)\r\n\r\n* 参数ele为字符串格式  可以是tag/class/ID name\r\n',
 21 silly publish   readmeFilename: 'README.md',
-21 silly publish   gitHead: '62d0406f36d49da772e9bd78fc02585eefbb3e06',
+21 silly publish   gitHead: '2d0b8d481b417572c72b5344026673adfa3a6b41',
 21 silly publish   bugs: { url: 'https://github.com/T-Macgrady/vue-click-ripple/issues' },
 21 silly publish   homepage: 'https://github.com/T-Macgrady/vue-click-ripple#readme',
 21 silly publish   _id: 'vue-click-ripple@1.0.0',
@@ -63,23 +63,44 @@
 27 silly mapToRegistry uri http://registry.npmjs.org/vue-click-ripple
 28 verbose publish registryBase http://registry.npmjs.org/
 29 silly publish uploading C:\Users\15156\AppData\Roaming\npm-cache\vue-click-ripple\1.0.0\package.tgz
-30 verbose stack Error: auth required for publishing
-30 verbose stack     at CachingRegistryClient.publish (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\publish.js:30:14)
-30 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\publish.js:138:14
-30 verbose stack     at mapToRegistry (C:\Program Files\nodejs\node_modules\npm\lib\utils\map-to-registry.js:62:3)
-30 verbose stack     at publish_ (C:\Program Files\nodejs\node_modules\npm\lib\publish.js:107:3)
-30 verbose stack     at Array.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\bind-actor.js:15:8)
-30 verbose stack     at LOOP (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:15:14)
-30 verbose stack     at LOOP (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:14:28)
-30 verbose stack     at chain (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:20:5)
-30 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\publish.js:73:5
-30 verbose stack     at RES (C:\Program Files\nodejs\node_modules\npm\node_modules\inflight\inflight.js:23:14)
-31 verbose cwd B:\project\doc\vue-click-ripple\vue-click-ripple
-32 error Windows_NT 10.0.17134
-33 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
-34 error node v6.12.3
-35 error npm  v3.10.10
-36 error code ENEEDAUTH
-37 error need auth auth required for publishing
-38 error need auth You need to authorize this machine using `npm adduser`
-39 verbose exit [ 1, true ]
+30 verbose request uri http://registry.npmjs.org/vue-click-ripple
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 16:52:27
+33 verbose request using bearer token for auth
+34 verbose request id 611a2d93c77284c4
+35 http request PUT http://registry.npmjs.org/vue-click-ripple
+36 http 403 http://registry.npmjs.org/vue-click-ripple
+37 verbose headers { date: 'Fri, 21 Sep 2018 08:52:30 GMT',
+37 verbose headers   'content-type': 'application/json',
+37 verbose headers   'transfer-encoding': 'chunked',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'set-cookie': [ '__cfduid=d98202fa2a6783380148ce1dfb72497731537519950; expires=Sat, 21-Sep-19 08:52:30 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+37 verbose headers   'cf-ray': '45db4bc7c4d4542c-LAX',
+37 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+37 verbose headers   vary: 'Accept-Encoding',
+37 verbose headers   server: 'cloudflare',
+37 verbose headers   'content-encoding': 'gzip' }
+38 verbose request invalidating C:\Users\15156\AppData\Roaming\npm-cache\registry.npmjs.org\vue-click-ripple on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: You do not have permission to publish "vue-click-ripple". Are you logged in as the correct user? : vue-click-ripple
+40 verbose stack     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:302:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:290:14)
+40 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:216:7
+40 verbose stack     at Gunzip.onEnd (zlib.js:227:5)
+40 verbose stack     at emitNone (events.js:91:20)
+40 verbose stack     at Gunzip.emit (events.js:185:7)
+40 verbose stack     at endReadableNT (_stream_readable.js:974:12)
+40 verbose stack     at _combinedTickCallback (internal/process/next_tick.js:80:11)
+40 verbose stack     at process._tickCallback (internal/process/next_tick.js:104:9)
+41 verbose statusCode 403
+42 verbose pkgid vue-click-ripple
+43 verbose cwd B:\project\doc\vue-click-ripple\vue-click-ripple
+44 error Windows_NT 10.0.17134
+45 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+46 error node v6.12.3
+47 error npm  v3.10.10
+48 error code E403
+49 error You do not have permission to publish "vue-click-ripple". Are you logged in as the correct user? : vue-click-ripple
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]

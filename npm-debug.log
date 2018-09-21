@@ -1,0 +1,85 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.10
+3 info using node@v6.12.3
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'B:\\project\\doc\\vue-click-ripple\\vue-click-ripple',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\15156\AppData\Roaming\npm-cache\vue-click-ripple\1.0.0\package.tgz not in flight; packing
+9 verbose correctMkdir C:\Users\15156\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+10 info lifecycle vue-click-ripple@1.0.0~prepublish: vue-click-ripple@1.0.0
+11 silly lifecycle vue-click-ripple@1.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ 'C:\\Users\\15156\\AppData\\Roaming\\npm-cache\\vue-click-ripple\\1.0.0\\package.tgz',
+12 verbose tar pack   'B:\\project\\doc\\vue-click-ripple\\vue-click-ripple' ]
+13 verbose tarball C:\Users\15156\AppData\Roaming\npm-cache\vue-click-ripple\1.0.0\package.tgz
+14 verbose folder B:\project\doc\vue-click-ripple\vue-click-ripple
+15 verbose addLocalTarball adding from inside cache C:\Users\15156\AppData\Roaming\npm-cache\vue-click-ripple\1.0.0\package.tgz
+16 verbose correctMkdir C:\Users\15156\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+17 silly cache afterAdd vue-click-ripple@1.0.0
+18 verbose afterAdd C:\Users\15156\AppData\Roaming\npm-cache\vue-click-ripple\1.0.0\package\package.json not in flight; writing
+19 verbose correctMkdir C:\Users\15156\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+20 verbose afterAdd C:\Users\15156\AppData\Roaming\npm-cache\vue-click-ripple\1.0.0\package\package.json written
+21 silly publish { name: 'vue-click-ripple',
+21 silly publish   version: '1.0.0',
+21 silly publish   description: 'click ripple',
+21 silly publish   main: 'index.js',
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+ssh://git@github.com/T-Macgrady/vue-click-ripple.git' },
+21 silly publish   author: { name: 'lizhh' },
+21 silly publish   private: false,
+21 silly publish   license: 'MIT',
+21 silly publish   readme: '# vue-click-ripple\r\nvue点击波纹特效插件\r\n\r\n\r\n## 安装\r\n\r\n#### npm下载\r\n`````\r\n● yarn add vue-click-ripple\r\n`````\r\n### vue-cli内main文件\r\n\r\n``````\r\n● import Vue from \'vue\'\r\n\r\n● import clickRipple from "vue-click-ripple"\r\n\r\n● Vue.use(clickRipple)\r\n````````````````\r\n\r\n## 使用\r\n\r\n* this.$clickRipple(ele)  ||  Vue.$clickRipple(ele)\r\n\r\n* 参数ele为字符串格式  可以是tag/class/ID name\r\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: '62d0406f36d49da772e9bd78fc02585eefbb3e06',
+21 silly publish   bugs: { url: 'https://github.com/T-Macgrady/vue-click-ripple/issues' },
+21 silly publish   homepage: 'https://github.com/T-Macgrady/vue-click-ripple#readme',
+21 silly publish   _id: 'vue-click-ripple@1.0.0',
+21 silly publish   scripts: {},
+21 silly publish   _shasum: '350b4e69ddd4f9cad4833fe1114bf1ee94285d28',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name vue-click-ripple
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry http://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'vue-click-ripple',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'vue-click-ripple',
+26 silly mapToRegistry   name: 'vue-click-ripple',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri http://registry.npmjs.org/vue-click-ripple
+28 verbose publish registryBase http://registry.npmjs.org/
+29 silly publish uploading C:\Users\15156\AppData\Roaming\npm-cache\vue-click-ripple\1.0.0\package.tgz
+30 verbose stack Error: auth required for publishing
+30 verbose stack     at CachingRegistryClient.publish (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\publish.js:30:14)
+30 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\publish.js:138:14
+30 verbose stack     at mapToRegistry (C:\Program Files\nodejs\node_modules\npm\lib\utils\map-to-registry.js:62:3)
+30 verbose stack     at publish_ (C:\Program Files\nodejs\node_modules\npm\lib\publish.js:107:3)
+30 verbose stack     at Array.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\bind-actor.js:15:8)
+30 verbose stack     at LOOP (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:15:14)
+30 verbose stack     at LOOP (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:14:28)
+30 verbose stack     at chain (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:20:5)
+30 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\publish.js:73:5
+30 verbose stack     at RES (C:\Program Files\nodejs\node_modules\npm\node_modules\inflight\inflight.js:23:14)
+31 verbose cwd B:\project\doc\vue-click-ripple\vue-click-ripple
+32 error Windows_NT 10.0.17134
+33 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+34 error node v6.12.3
+35 error npm  v3.10.10
+36 error code ENEEDAUTH
+37 error need auth auth required for publishing
+38 error need auth You need to authorize this machine using `npm adduser`
+39 verbose exit [ 1, true ]

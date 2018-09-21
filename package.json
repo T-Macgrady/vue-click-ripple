@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "click ripple",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:T-Macgrady/vue-click-ripple.git"
+  },
   "author": "lizhh",
+  "private": false,
   "license": "MIT"
 }

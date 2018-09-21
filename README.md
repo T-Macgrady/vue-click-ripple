@@ -8,7 +8,7 @@ vue点击波纹特效插件
 `````
 ● yarn add vue-click-ripples
 `````
-### vue-cli内main文件
+### 引入
 
 ``````
 ● import Vue from 'vue'

@@ -1,12 +1,16 @@
 {
   "name": "vue-click-ripples",
   "version": "1.0.0",
-  "description": "click ripple",
+  "description": "click element with ripple",
   "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git@github.com:T-Macgrady/vue-click-ripple.git"
   },
+  "bugs": {
+    "url": "https://github.com/T-Macgrady/vue-click-ripple/issues"
+  },
+  "homepage": "https://github.com/T-Macgrady/vue-click-ripple",
   "author": "lizhh",
   "private": false,
   "license": "MIT"

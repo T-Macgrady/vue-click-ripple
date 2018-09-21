@@ -1,0 +1,8 @@
+{
+  "name": "vue-click-ripple",
+  "version": "1.0.0",
+  "description": "click ripple",
+  "main": "index.js",
+  "author": "lizhh",
+  "license": "MIT"
+}

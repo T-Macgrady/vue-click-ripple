@@ -6,14 +6,14 @@ vue点击波纹特效插件
 
 #### npm下载
 `````
-● yarn add vue-click-ripple
+● yarn add vue-click-ripples
 `````
 ### vue-cli内main文件
 
 ``````
 ● import Vue from 'vue'
 
-● import clickRipple from "vue-click-ripple"
+● import clickRipple from "vue-click-ripples"
 
 ● Vue.use(clickRipple)
 ````````````````
